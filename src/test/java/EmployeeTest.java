@@ -48,8 +48,14 @@ public class EmployeeTest {
 
     @Test
     public void canIncreaseSalary() {
-        employee.increase(30000);
-        assertEquals(30000, employee.getSalary());
+        employee.increaseSalary();
+        assertEquals(26000, employee.getSalary());
+    }
+
+    @Test
+    public void canPayBonus(){
+        employee.payBonus();
+        assertEquals(250, employee.payBonus());
     }
 
 

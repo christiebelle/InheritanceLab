@@ -35,6 +35,10 @@ public class Employee {
     }
 
     public void increaseSalary(){
-        this.salary =(this.salary += 1000);
+        this.salary = (this.salary += 1000);
+    }
+
+    public int payBonus(){
+        return (this.salary/100);
     }
 }
